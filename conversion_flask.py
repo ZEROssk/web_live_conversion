@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request, redirect
-import numpy as np
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -7,6 +6,6 @@ app = Flask(__name__)
 def maine():
     return render_template("maine.html")
 
-if __naem__ == "_main__":
+if __name__ == '_main__':
     app.run(debug=True)
 
