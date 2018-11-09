@@ -6,6 +6,6 @@ app = Flask(__name__)
 def maine():
     return render_template("maine.html")
 
-if __name__ == '_main__':
+if __name__ == '__main__':
     app.run(debug=True)
 
