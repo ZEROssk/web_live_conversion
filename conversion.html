@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>ライブ変換サイト</title>
+	<script type="text/javascript" src="conversion.js"></script>
 </head>
 <body>
 	<table>
 		<tr>
-				<th><h2>character</h2>
-					<p><textarea id="input" cols="50" rows="5" onKeyUp="addValue()"/></textarea></p></th>
-				<th><h2>UTF-8(hex)</h2>
-					<p><textarea id="output" cols="50" rows="5"></textarea></p></th>
-					<!--<script id="js" src="js.js"></script>
-					<!--<input type="checkbox" name="2" value="on">2
-					<input type="checkbox" name="4" value="off">4
-					<input type="checkbox" name="8" value="off">8
-					<input type="checkbox" name="10"value="off">10 -->
-					<input type="checkbox" name="16" id="16" onclick="check_16(this.checked);">16
-					<input type="checkbox" name="kana" value="off" onclick="check_kana('checkforkana',this.checked);">かな
-					<script src="conversion_kana.js"></script>
-				<!--
-				<input type="checkbox" value="2"/>2進数
-				<input type="checkbox" value="8"/>8進数
-				<input type="checkbox" value="10"/>10進数
-				<input type="checkbox" value="16"/>16進数
-				<input type="checkbox" value="kana"/>ひらがな
-				-->
+				<th>
+					<h2>character</h2>
+					<textarea id="input" cols="50" rows="5"></textarea>
+				</th>
+				<th>
+					<h2>UTF-8(hex)</h2>
+					<textarea id="output" cols="50" rows="5"></textarea>
+				</th>
+				<input id="checkbox_2" type="checkbox">
+				<a>2進数</a>
+				<input is="checkbox_8" type="checkbox">
+				<a>8進数</a>
+				<input id="checkbox_10" type="checkbox">
+				<a>10進数</a>
+				<input id="checkbox_16" type="checkbox">
+				<a>16進数</a>
+				<input id="checkbox_kana" type="checkbox">
+				<a>かな</a>
 		</tr>
 	</table>
 	<h1><p id="RealtimeClockArea2"><script src="clock.js"></script></p></h1>
