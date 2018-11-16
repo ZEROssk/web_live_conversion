@@ -16,13 +16,21 @@
 		output = document.getElementById('output');
 
 		checkbox_2 = document.getElementById('checkbox_2');
-		checkbox_8 = document.getElementById('checkbox_8');
+		checkbox_8 = false;//document.getElementById('checkbox_8');
 		checkbox_10 = document.getElementById('checkbox_10');
 		checkbox_16 = document.getElementById('checkbox_16');
 		checkbox_kana = document.getElementById('checkbox_kana');
 
 		checkbox_2.addEventListener('input', () => {
 			checkbox_8.checked, checkbox_10.checked, checkbox_16.checked, checkbox_kana.checked = !checkbox_2.checked;
+		}, false);
+
+		checkbox_8.addEventListener('input', () => {
+			checkbox_2.checked, checkbox_10.checked, checkbox_16.checked, checkbox_kana.checked = !checkbox_8.checked;
+		}, false);
+
+		checkbox_10.addEventListener('input', () => {
+			checkbox_2.checked, checkbox_8.checked, checkbox_16.checked, checkbox_kana.checked = !checkbox_10.checked;
 		}, false);
 
 		checkbox_16.addEventListener('input', () => {
