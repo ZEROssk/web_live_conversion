@@ -22,7 +22,6 @@
 		checkbox_kana = document.getElementById('checkbox_kana');
 
 		checkbox_2.addEventListener('input', () => {
-			checkbox_8.checked || checkbox_10.checked || checkbox_16.checked || checkbox_kana.checked = !checkbox_2.checked;
 			if(checkbox_2.checked) {
 				input.addEventListener('keyup', () => {
 					addValue_2();
@@ -31,7 +30,6 @@
 		}, false);
 
 		checkbox_8.addEventListener('input', () => {
-			checkbox_2.checked || checkbox_10.checked || checkbox_16.checked || checkbox_kana.checked = !checkbox_8.checked;
 			if(checkbox_8.checked) {
 				input.addEventListener('keyup', () => {
 					addValue_8();
@@ -40,7 +38,6 @@
 		}, false);
 
 		checkbox_10.addEventListener('input', () => {
-			checkbox_2.checked || checkbox_8.checked || checkbox_16.checked || checkbox_kana.checked = !checkbox_10.checked;
 			if(checkbox_10.checked) {
 			 	input.addEventListener('keyup', () => {
 			 		addValue_10();
@@ -49,7 +46,6 @@
 		}, false);
 
 		checkbox_16.addEventListener('input', () => {
-			checkbox_2.checked || checkbox_8.checked || checkbox_10.checked || checkbox_kana.checked = !checkbox_16.checked;
 			if(checkbox_16.checked) {
 				input.addEventListener('keyup', () => {
 					addValue_16();
@@ -58,7 +54,6 @@
 		}, false);
 
 		checkbox_kana.addEventListener('input', () => {
-			checkbox_2.checked || checkbox_8.checked || checkbox_10.checked || checkbox_16.checked = !checkbox_kana.checked;
 			if(checkbox_kana.checked) {
 				input.addEventListener('keyup', () => {
 					addValue_kana();

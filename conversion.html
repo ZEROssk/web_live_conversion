@@ -5,7 +5,9 @@
 	<title>ライブ変換サイト</title>
 	<script type="text/javascript" src="conversion.js"></script>
 	<script type="text/javascript" src="clock.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css"> 
 </head>
+<!-- sct = set conversion type -->
 <body>
 	<table>
 		<tr>
@@ -17,26 +19,29 @@
 					<h2>UTF-8(hex)</h2>
 					<textarea id="output" cols="50" rows="5"></textarea>
 				</th>
+				<h3>
+					<a>Pleas select conversion type</a><br><br>
 				<label>
-					<input id="checkbox_2" type="checkbox" checked="true">
+					<input id="checkbox_2" name="sct" type="radio">
 					<a>2進数</a>
 				</label>
 				<label>
-					<input id="checkbox_8" type="checkbox">
+					<input id="checkbox_8" name="sct" type="radio">
 					<a>8進数</a>
 				</label>
 				<label>
-					<input id="checkbox_10" type="checkbox">
+					<input id="checkbox_10" name="sct" type="radio">
 					<a>10進数</a>
 				</label>
 				<label>
-					<input id="checkbox_16" type="checkbox">
+					<input id="checkbox_16" name="sct" type="radio">
 					<a>16進数</a>
 				</label>
 				<label>
-					<input id="checkbox_kana" type="checkbox">
-					<a>かな</a>
+					<input id="checkbox_kana" name="sct" type="radio">
+					<a>かな→%--%--%--</a>
 				</label>
+				</h3>
 		</tr>
 	</table>
 	<h1><p id="RealtimeClockArea"></p></h1>
