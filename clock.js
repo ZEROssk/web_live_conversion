@@ -7,7 +7,8 @@ var clock = new Vue({
 	}
 })
 
-setInterval(realTime(), 1000);
+var update = setInterval(realTime, 1000);
+realTime();
 
 function set2time(num) {
 	let t;
@@ -25,5 +26,6 @@ function realTime() {
 	let nowHour = set2time( nowTime.getHours() );
 	let nowMin  = set2time( nowTime.getMinutes() );
 	let nowSec  = set2time( nowTime.getSeconds() );
+
 	clock.time = "Clock: " + nowHour + ":" + nowMin + ":" + nowSec;
 }
