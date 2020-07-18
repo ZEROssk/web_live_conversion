@@ -1,23 +1,25 @@
 'use strict';
 
-function set2fig(num) {
-	let ret;
-	if( num < 10 ) { ret = "0" + num; }
-	else { ret = num; }
+function set2time(num) {
+	let t;
+	if( num < 10 ) {
+		t = "0" + num;
+	}
+	else {
+		t = num;
+	}
 	
-	return ret;
+	return t;
 }
 
 function showClock2() {
 	let nowTime = new Date();
-	let nowHour = set2fig( nowTime.getHours() );
-	let nowMin  = set2fig( nowTime.getMinutes() );
-	let nowSec  = set2fig( nowTime.getSeconds() );
-	let msg = "Time: " + nowHour + ":" + nowMin + ":" + nowSec;
-	document.getElementById("RealtimeClockArea").innerHTML = msg;
+	let nowHour = set2time( nowTime.getHours() );
+	let nowMin  = set2time( nowTime.getMinutes() );
+	let nowSec  = set2time( nowTime.getSeconds() );
+	let time = "Clock: " + nowHour + ":" + nowMin + ":" + nowSec;
+	document.getElementById("RealtimeClockArea").innerHTML = time;
 }
-
-//setInterval('showClock2()',1000);
 
 var clock = new Vue({
 	el: '#RealtimeClockArea',
