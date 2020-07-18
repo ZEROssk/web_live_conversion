@@ -17,5 +17,11 @@ function showClock2() {
 	document.getElementById("RealtimeClockArea").innerHTML = msg;
 }
 
-setInterval('showClock2()',1000);
+//setInterval('showClock2()',1000);
 
+var clock = new Vue({
+	el: '#RealtimeClockArea',
+	data: {
+		clock: setInterval('showClock2()',1000)
+	}
+})

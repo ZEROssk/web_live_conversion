@@ -7,6 +7,7 @@
 	<meta property="og:image" content="https://avatars2.githubusercontent.com/u/26990006?s=460&v=4">
 	<meta property="og:url" content="https://zerossk.github.io/web_live_conversion/conversion.html">
 	<meta property="og:description" content="入力された文字をライブ変換でUTF-8(hex)に変換します。">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript" src="conversion.js"></script>
 	<script type="text/javascript" src="clock.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css"> 
@@ -49,6 +50,8 @@
 				</h3>
 		</tr>
 	</table>
-	<h1><p id="RealtimeClockArea"></p></h1>
+	<div id="RealtimeClockArea">
+		{{ clock }}
+	</div>
 </body>
 </html>
