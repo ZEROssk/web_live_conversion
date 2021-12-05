@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta property="og:title" content="Live conversion to utf-8">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://avatars2.githubusercontent.com/u/26990006?s=460&v=4">
+	<meta property="og:url" content="https://zerossk.github.io/web_live_conversion/conversion.html">
+	<meta property="og:description" content="入力された文字をライブ変換でUTF-8(hex)に変換します。">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="conversion.js"></script>
+	<script type="text/javascript" src="clock.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css"> 
+	<title>Live conversion to utf-8</title>
+</head>
+<!-- sct = set conversion type -->
+<body>
+	<table>
+		<tr>
+			<th>
+				<h2>character</h2>
+				<textarea id="input" cols="50" rows="5"></textarea>
+			</th>
+			<th>
+				<h2>UTF-8(hex)</h2>
+				<textarea id="output" cols="50" rows="5"></textarea>
+			</th>
+			<h3>
+				<a>Pleas select conversion type</a><br><br>
+			<label>
+				<input id="checkbox_2" name="sct" type="radio">
+				<a>2進数</a>
+			</label>
+			<label>
+				<input id="checkbox_8" name="sct" type="radio">
+				<a>8進数</a>
+			</label>
+			<label>
+				<input id="checkbox_10" name="sct" type="radio">
+				<a>10進数</a>
+			</label>
+			<label>
+				<input id="checkbox_16" name="sct" type="radio">
+				<a>16進数</a>
+			</label>
+			<label>
+				<input id="checkbox_kana" name="sct" type="radio">
+				<a>かな→%--%--%--</a>
+			</label>
+			</h3>
+		</tr>
+	</table>
+	<div id="Clock">
+		{{ time }}
+	</div>
+</body>
+</html>
